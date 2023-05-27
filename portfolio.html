@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css"/>
+
+</head>
+<body>
+  <header class="header">
+    <div class="container page-header-container">
+    <nav class="page-nav">
+      <a href="./index.html" class="logo link">Web<span class="text-logo">Studio</span></a>
+      <ul class="list menu">
+        <li class="menu-nav"><a class="list-nav link" href="./index.html">Studio</a></li>
+        <li class="menu-nav"><a class="list-nav link" href="./portfolio.html">Portfolio</a></li>
+        <li class="menu-nav"><a class="list-nav link" href="">Contacts</a></li>
+      </ul>
+    </nav>
+    <address class="address">
+    <ul class="list menu-address">
+      <li class="menu-contact"><a class="list-contact link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <li class="menu-contact"><a class="list-contact link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+    </ul>
+  </address>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="filtres">
+      <div class="container">
+      <h1 hidden class="visually-hidden">Page filters</h1>
+      <ul class="section-button list">
+
+        <li>
+          <button type="button" class="button-filters">All</button>
+        </li>
+    
+        <li>
+          <button type="button" class="button-filters">Web Site</button>
+        </li>
+        <li>
+          <button type="button" class="button-filters">App</button>
+        </li>
+        <li>
+          <button type="button" class="button-filters">Design</button>
+        </li>
+        <li>
+          <button type="button" class="button-filters">Marketing</button>
+        </li>
+      </ul>
+
+      <ul class="cards-portfolio list">
+        <li class="gallery-list"><a class="portfolio-card link">
+          <img width="360" src="./images/app.jpg" alt="BankApp">
+          <div class="portfolio-text">
+          <h2 class="headline portfolio-headline">Banking App Interface Concept</h2>
+          <p class="text">App</p>
+          </div>
+          </a>
+        </li>
+        
+        <li class="gallery-list"><a class="portfolio-card link">
+          <img width="360" src="./images/payment.jpg" alt="Cashless Payment">
+          <div class="portfolio-text">
+          <h2 class="headline portfolio-headline">Cashless Payment</h2>
+          <p class="text">Marketing</p>
+          </div>
+        </a>
+        </li>
+
+        <li class="gallery-list"><a class="portfolio-card link">
+            <img width="360" src="./images/meditationapp.jpg" alt="Laptop">
+            <div class="portfolio-text">
+            <h2 class="headline portfolio-headline">Meditation App</h2>
+            <p class="text">App</p>
+            </div>
+          </a>
+          </li>
+        <li class="gallery-list"><a class="portfolio-card link">
+          <img width="360" src="./images/taxi.jpg" alt="Car">
+          <div class="portfolio-text">
+          <h2 class="headline portfolio-headline">Taxi Service</h2>
+          <p class="text">Marketing</p>
+          </div>
+        </a>
+        </li>
+        <li class="gallery-list"><a class="portfolio-card link">
+          <img width="360" src="./images/screen.jpg" alt="Screenshot of the phone screen">
+          <div class="portfolio-text">
+          <h2 class="headline portfolio-headline">Screen Illustrations</h2>
+          <p class="text">Design</p>
+          </div>
+        </a>
+        </li>
+        <li class="gallery-list"><a class="portfolio-card link">
+          <img width="360" src="./images/onlinecourses.jpg" alt="Girl">
+          <div class="portfolio-text">
+          <h2 class="headline portfolio-headline">Online Courses</h2>
+          <p class="text">Marketing</p>
+          </div>
+        </a>
+        </li>
+        <li class="gallery-list"><a class="portfolio-card link">
+          <img width="360" src="./images/instagram.jpg" alt="Instagram Stories">
+          <div class="portfolio-text">
+          <h2 class="headline portfolio-headline">Instagram Stories Concept</h2>
+          <p class="text">Design</p>
+          </div>
+        </a>
+        </li>
+        <li class="gallery-list"><a class="portfolio-card link">
+          <img width="360" src="./images/organicfood.jpg" alt="Vegetables and fruits">
+          <div class="portfolio-text">
+          <h2 class="headline portfolio-headline">Organic Food</h2>
+          <p class="text">Web Site</p>
+          </div>
+        </a>
+        </li>
+        <li class="gallery-list"><a class="portfolio-card link">
+          <img width="360" src="./images/coffee.jpg" alt="Coffee">
+          <div class="portfolio-text">
+          <h2 class="headline portfolio-headline">Fresh Coffee</h2>
+          <p class="text">Web Site</p>
+          </div>
+       </a> 
+       </li>
+      </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+
+    <div class="container">
+      <ul class="footer-item"><li class="footer-list list">
+    <a href="./index.html" class="logo link logo-link">Web<span class="footer-logo">Studio</span></a>
+    <p class="text footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+    </li>
+
+     <li class="footer-list list">
+    <h2 class="hidden-social">Social media</h2>
+    <ul class="social-icons list">     
+      <li class="social"> 
+        <a class="social-link link">
+        <svg class="instagram" width="24" height="24"><use href="./images/icons.svg#icon-instagram"></use>
+        </svg>
+        </a>
+      </li>
+
+      <li class="social"><a class="social-link link">
+        <svg class="twiter" width="24" height="19.5"><use href="./images/icons.svg#icon-twiter"></use>
+        </svg>
+      </a>
+      </li>
+
+      <li class="social">
+        <a class="social-link link ">
+        <svg class="facebook" width="12" height="24"><use href="./images/icons.svg#icon-facebook"></use>
+        </svg>
+        </a>
+      </li>
+
+      <li class="social"> 
+        <a class="social-link link">
+        <svg class="" width="24" height="24"><use href="./images/icons.svg#icon-linkedin"></use>
+        </svg>
+        </a>
+      </li>
+    </ul>
+    </li>
+    </div> 
+  </footer>
+ 
+
+</body>
+</html>
