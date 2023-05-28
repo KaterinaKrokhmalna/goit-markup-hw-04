@@ -446,10 +446,13 @@ color: var(--white-color);
         align-items: center;
         justify-content: center; 
     }
-    .social-icon-link:hover,
+    .social-icon-link:hover{
+        background-color: #31d0aa;
+    }
     .social-icon-link:focus{
         background-color: #31d0aa;
     }
+
 
 /*** portfolio***/
 
@@ -504,7 +507,9 @@ color: var(--white-color);
     .portfolio-card{
         display: block; 
     }
-    .portfolio-card:hover,
+    .portfolio-card:hover{
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);  
+    }
     .portfolio-card:focus{
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);  
     }
