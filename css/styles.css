@@ -8,6 +8,7 @@
     --secondar-font-family: Raleway, sans-serif;
     --pressed-state: #404BBF;
     --accent: #E7E9FC;
+    --color-icons: #8e8f99; 
 }
 h1, h2, h3, h4, h5, h6, p{
     margin-top: 0;
@@ -37,6 +38,7 @@ body{
     padding-top: 25.5px;
     padding-bottom: 25.5px;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-header-container{
     display: flex;
@@ -132,7 +134,7 @@ cursor: pointer;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      min-width: 1440px;
+      max-width: 1440px; 
       
     }
     .hero-title{
@@ -301,12 +303,14 @@ justify-content: center;
 .social-icons{
     display: flex;
     justify-content: center;
+    gap: 24px;
+
     
 }
-
+/*
 .social:not(:last-child){
     margin-right: 24px;
-}
+}*/
     
 .social-link{
     width: 100%;
@@ -314,6 +318,7 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .social {
@@ -323,6 +328,7 @@ justify-content: center;
     border-radius: 50px;
     margin-bottom: 32px;
     margin-top: 8px;
+
 }
 .social:hover,
 .social:focus{
@@ -340,48 +346,40 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color:var(--dark-text-color);
+margin-bottom: 72px; 
   }
 
  
 .company-list{
     display: flex;
-    justify-content: center;
+    gap: 24px; 
 }
-
 .company{
-width: 168px;
-height: 88px;
-border: 1px solid #8E8F99;
-border-radius: 4px;
-margin-right: 24px;
-margin-top: 72px;
+    width: calc((100% - 120px) / 6);
+    height: 88px; 
 }
-
 .site-companys{
-width: 100%;
-height: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-icons);
+    border-radius: 4px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
 }
-
-.company:hover,
-.company:focus{
-border-color: var(--pressed-state);
-}
-
 .customers-icon{
-fill:#8e8f99;
-}
+    fill:var(--color-icons);
+    }
+    .site-companys:hover,
+    .site-companys:focus{
+      border-color:var(--pressed-state); 
+    }
+    .company:hover .customers-icon,
+    .company:focus .customers-icon{
+     fill: var(--pressed-state);  
+    }
 
-.company:hover .customers-icon,
-.company:focus .customers-icon{
-fill: var(--pressed-state);  
-}
-
-
-
-
+/*footer*/
 
     .footer-logo{
         color: var(--background-light);
@@ -409,6 +407,14 @@ fill: var(--pressed-state);
         max-width: 264px;
     }
 
+    .footer-conteriner{
+        display: flex;
+        align-items: baseline;
+    }
+    .footer-item{
+        margin-right: 120px;
+    }
+
 .hidden-social{
 font-family:var(--primeri-font-family);
 font-style: normal;
@@ -417,13 +423,30 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 margin-bottom: 16px;
+color: var(--white-color);
     }
-    .footer-item{
+    .social-footer{
         display: flex;
+        gap: 16px;
     }
-    .footer-list:first-child{
-        margin-right: 120px;
+    .footer-icons{
+        width: 40px;
+        height: 40px;
     }
+    .social-icon-link{
+        width: 100%;
+        height: 100%;
+        background-color:var(--primary-brand-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    .social-icon-link:hover,
+    .social-icon-link:focus{
+        background-color: #31d0aa;
+    }
+
 /*** portfolio***/
 
 
@@ -470,11 +493,15 @@ margin-bottom: 16px;
         row-gap: 48px;  
         column-gap: 24px; 
     }
-    .portfolio-card{
+    .gallery-list{
         width: calc((100% - 48px) / 3); 
+        
     }
-    .gallery-list:hover,
-    .gallery-list:focus{
+    .portfolio-card{
+        display: block; 
+    }
+    .portfolio-card:hover,
+    .portfolio-card:focus{
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);  
     }
 
